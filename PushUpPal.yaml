@@ -1,0 +1,30 @@
+---
+name: Mat
+typedef: 'record'
+params: []
+prefix: ''
+cpp:
+    typename: '::cv::Mat'
+    header: '<opencv2/core/mat.hpp>'
+    byValue: false
+objc:
+    typename: 'OpenCvMat'
+    header: '"OpenCvMat.h"'
+    boxed: 'CvMatConverter'
+    pointer: true
+    hash: '%s.hash'
+objcpp:
+    translator: '::cv::djinni::objc::CvMatConverter'
+    header: '"OpenCvMat+Private.h"'
+java:
+    typename: 'org.opencv.core.Mat'
+    boxed: 'org.opencv.core.Mat'
+    reference: true
+    generic: true
+    hash: '%s.hashCode()'
+jni:
+    translator: '::cv::djinni::jni::NativeMat'
+    header: '"NativeMat.hpp"'
+    typename: jobject
+    typeSignature: 'Lorg/opencv/core/Mat;'
+---

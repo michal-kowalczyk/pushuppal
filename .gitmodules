@@ -1,0 +1,6 @@
+[submodule "deps/djinni"]
+	path = deps/djinni
+	url = https://github.com/dropbox/djinni
+[submodule "deps/opencv"]
+	path = deps/opencv
+	url = https://github.com/opencv/opencv

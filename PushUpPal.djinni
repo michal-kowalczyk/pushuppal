@@ -1,0 +1,24 @@
+@extern "PushUpPal.yaml"
+
+CameraOrientation = enum {
+  landscape;
+  portrait;
+}
+
+PushUpListener = interface +j +o {
+    onPushUp(rep: i32);
+}
+
+PushUpPalApp = interface +c {
+    static create(orientation: CameraOrientation, classifierFilePath: string): PushUpPalApp;
+    onFrame(frame: Mat);
+    start();
+    stop();
+    isStarted(): bool;
+    reset();
+    setListener(listener: PushUpListener);
+}
+
+Tst = interface +c +o {
+  method(val: i32);
+}
