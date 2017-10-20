@@ -2,7 +2,7 @@
 
 This is a demo project presenting how to combine Swift/Kotlin and C++.
 
-In order to try it:
+In order to try it...
 
 1. Make djinni:
 
@@ -25,7 +25,7 @@ In order to try it:
 - Build the project in Android studio
 
 
-3b. iOS project
+3b. Try iOS project:
 
 - Download and unzip the latest version of OpenCV iOS Framework https://sourceforge.net/projects/opencvlibrary/files/opencv-ios to deps/opencv2.framework
 
